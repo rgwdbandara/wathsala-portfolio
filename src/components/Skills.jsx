@@ -50,7 +50,7 @@ function Skills() {
         <div className="mt-12">
           <a
             href="/images/files/Wathsala_Bandara_Intern_CV.pdf"
-            download="Wathsala_Bandara_Intern_CV.pdf"
+            download="Wathsala_Bandara_CV.pdf"
             className="inline-flex px-6 py-3 font-semibold text-black transition bg-green-500 rounded-lg hover:bg-green-400"
           >
             Download CV

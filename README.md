@@ -78,4 +78,15 @@ If you’d like to collaborate or have an opportunity, feel free to reach out.
 
 ## 📄 License
 
-MIT License
+MIT License        
+
+
+<img width="1898" height="874" alt="image" src="https://github.com/user-attachments/assets/e1c64026-6ae8-4da0-9c79-26214de9f699" />
+
+<img width="1898" height="882" alt="image" src="https://github.com/user-attachments/assets/a20d898a-f858-4288-b804-07517aa384f4" />
+
+<img width="1887" height="881" alt="image" src="https://github.com/user-attachments/assets/32840d2e-da16-4351-8227-ba7f3fa3bef5" />
+
+
+
+

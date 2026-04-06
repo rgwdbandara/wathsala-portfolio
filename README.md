@@ -1,3 +1,30 @@
+# Wathsala Portfolio
+
+## Description
+This is my personal portfolio showcasing my projects, skills, and experience.
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+
+## Local Development Steps
+1. Clone the repository: `git clone https://github.com/rgwdbandara/wathsala-portfolio.git`
+2. Navigate to the directory: `cd wathsala-portfolio`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+
+## Deployment Link
+You can view the deployed portfolio at: [Wathsala Portfolio](https://wathsala-portfolio.vercel.app/)
+
+## License
+This project is licensed under the MIT License.
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

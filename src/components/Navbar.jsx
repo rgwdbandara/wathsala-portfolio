@@ -1,16 +1,69 @@
-function Navbar() {
-  return (
-    <header className="w-full border-b border-white/10 bg-slate-950/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <h1 className="text-xl font-bold tracking-wide text-cyan-400">
-          Wathsala
-        </h1>
+import { useEffect, useState } from "react";
 
-        <ul className="hidden gap-8 text-sm font-medium text-gray-300 md:flex">
-          <li><a href="#home" className="hover:text-cyan-400">Home</a></li>
-          <li><a href="#projects" className="hover:text-cyan-400">Projects</a></li>
-          <li><a href="#skills" className="hover:text-cyan-400">Skills</a></li>
-          <li><a href="#contact" className="hover:text-cyan-400">Contact</a></li>
+function Navbar() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.35,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  const navLinks = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "uiux", label: "UI/UX" },
+    { id: "skills", label: "Skills" },
+    { id: "contact", label: "Contact" },
+  ];
+
+  return (
+    <header className="fixed top-0 z-50 w-full bg-black/70 backdrop-blur-md">
+      <nav className="flex items-center justify-between max-w-6xl px-6 py-5 mx-auto">
+        <a
+          href="#home"
+          className="text-3xl font-extrabold tracking-wide text-white"
+        >
+          <span className="text-green-400">W</span>athsala.
+        </a>
+
+        <ul className="items-center hidden gap-8 text-sm font-medium text-white md:flex">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a
+                href={`#${link.id}`}
+                className={`relative transition ${
+                  activeSection === link.id
+                    ? "text-green-400"
+                    : "text-white hover:text-green-400"
+                }`}
+              >
+                {link.label}
+
+                {activeSection === link.id && (
+                  <span className="absolute -bottom-2 left-0 h-[2px] w-full bg-green-400"></span>
+                )}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

@@ -1,43 +1,81 @@
-# Wathsala Portfolio
+# Wathsala Portfolio 🌸
 
-## Description
-This is my personal portfolio showcasing my projects, skills, and experience.
+A modern, responsive personal portfolio showcasing projects, skills, and experience.
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
+🌐 **Live Demo:** https://wathsala-portfolio.vercel.app/
+
+---
+
+## ✨ Features
+
+- 📱 **Responsive UI** — Works smoothly on mobile, tablet, and desktop
+- ⚡ **Fast & Lightweight** — Built with Vite for quick builds and HMR
+- 🎨 **Modern Design** — Clean sections for About, Skills, Projects & Contact
+- 🧩 **Reusable Components** — Organized React component structure
+- 🚀 **Easy Deployment** — Ready for Vercel / Netlify
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
 - React
-- Node.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-## Local Development Steps
-1. Clone the repository: `git clone https://github.com/rgwdbandara/wathsala-portfolio.git`
-2. Navigate to the directory: `cd wathsala-portfolio`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+---
 
-## Deployment Link
-You can view the deployed portfolio at: [Wathsala Portfolio](https://wathsala-portfolio.vercel.app/)
+## 📂 Project Structure (high level)
 
-## License
-This project is licensed under the MIT License.
+```
+src/
+  components/
+  pages/
+  assets/
+  styles/
+```
 
+---
 
+## 🚀 Getting Started
 
+### 1) Clone the repository
 
-# React + Vite
+```bash
+git clone https://github.com/rgwdbandara/wathsala-portfolio.git
+cd wathsala-portfolio
+```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 2) Install dependencies
 
-Currently, two official plugins are available:
+```bash
+npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 3) Run locally
 
-## React Compiler
+```bash
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 4) Build for production
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📬 Contact
+
+If you’d like to collaborate or have an opportunity, feel free to reach out.
+
+- GitHub: https://github.com/rgwdbandara
+
+---
+
+## 📄 License
+
+MIT License

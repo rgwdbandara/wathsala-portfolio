@@ -2,30 +2,46 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-[#06110B] px-6 pt-16 text-white overflow-hidden"
+      className="relative min-h-screen overflow-hidden bg-[#06110B] px-4 pt-24 text-white md:px-6 md:pt-16"
     >
       <div className="grid items-center max-w-6xl gap-10 mx-auto md:min-h-screen md:grid-cols-2">
-        
-        {/* LEFT */}
-        <div>
-          <p className="mb-4 text-2xl text-green-300 md:text-3xl">
+        {/* RIGHT IMAGE - mobile first */}
+        <div className="flex justify-center order-1 md:order-2 md:justify-end">
+          <div className="relative">
+            {/* Glow background */}
+            <div className="absolute inset-0 rounded-full bg-green-500 opacity-30 blur-[100px] md:blur-[120px]"></div>
+
+            {/* Image container */}
+            <div className="relative z-10 overflow-hidden rounded-full border border-white/10 bg-black shadow-[0_0_70px_rgba(34,197,94,0.25)]">
+              <img
+                src="/images/wathsala-photo.png"
+                alt="Wathsala"
+                className="h-[240px] w-[240px] rounded-full object-cover object-top sm:h-[280px] sm:w-[280px] md:h-[500px] md:w-[400px]"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* LEFT TEXT */}
+        <div className="order-2 text-center md:order-1 md:text-left">
+          <p className="mb-4 text-xl text-green-300 sm:text-2xl md:text-3xl">
             Full Stack Developer | UI/UX Enthusiast
           </p>
 
-          <h1 className="mb-6 text-5xl font-extrabold leading-tight md:text-7xl">
+          <h1 className="mb-6 text-4xl font-extrabold leading-tight sm:text-5xl md:text-7xl">
             Hi, I'm <span className="text-green-400">Wathsala</span>
             <br />
             Bandara
           </h1>
 
-          <p className="max-w-xl mb-8 text-base leading-8 text-gray-300 md:text-lg">
-           Computer Science undergraduate passionate about full stack development,
-           responsive frontend engineering, and UI/UX design. I enjoy building
-           modern web applications with React, Node.js, and MongoDB while creating
-           clean, user-friendly digital experiences.
+          <p className="max-w-xl mx-auto mb-8 text-sm leading-7 text-gray-300 sm:text-base md:mx-0 md:text-lg md:leading-8">
+            Computer Science undergraduate passionate about full stack
+            development, responsive frontend engineering, and UI/UX design. I
+            enjoy building modern web applications with React, Node.js, and
+            MongoDB while creating clean, user-friendly digital experiences.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap justify-center gap-4 md:justify-start">
             <a
               href="#projects"
               className="px-6 py-3 font-semibold text-black transition bg-green-500 rounded-md hover:bg-green-400"
@@ -43,25 +59,6 @@ function Hero() {
             </a>
           </div>
         </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center md:justify-end">
-          
-          {/* Green Glow */}
-          <div className="absolute h-[420px] w-[420px] rounded-full bg-green-400/20 blur-3xl"></div>
-
-          {/* Circle Container */}
-          <div className="relative z-10 h-[350px] w-[350px] md:h-[420px] md:w-[420px] rounded-full border border-green-400/30 overflow-hidden shadow-[0_0_80px_rgba(34,197,94,0.4)]">
-
-            <img
-              src="/images/wathsala-photo.png"
-              alt="Wathsala"
-              className="object-cover w-full h-full"
-            />
-
-          </div>
-        </div>
-
       </div>
     </section>
   );

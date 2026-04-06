@@ -21,13 +21,13 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="px-6 py-24 text-white bg-black">
+    <section id="skills" className="px-4 py-20 text-white bg-black md:px-6 md:py-24">
       <div className="max-w-6xl mx-auto">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-green-400">
           Expertise
         </p>
 
-        <h2 className="mb-4 text-4xl font-bold md:text-5xl">
+        <h2 className="mb-4 text-3xl font-bold md:text-5xl">
           My <span className="text-green-400">Skills</span>
         </h2>
 

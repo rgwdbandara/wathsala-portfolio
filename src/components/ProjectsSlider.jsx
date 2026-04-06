@@ -52,7 +52,7 @@ function ProjectsSlider() {
   ];
 
   return (
-    <section id="projects" className="bg-black px-6 py-24 text-white">
+    <section id="projects" className="bg-black px-4 py-20 text-white md:px-6 md:py-24">
       <div className="mx-auto max-w-7xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-green-400">
           Portfolio

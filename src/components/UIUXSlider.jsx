@@ -62,7 +62,7 @@ function UIUXSlider() {
   ];
 
   return (
-    <section id="uiux" className="px-6 py-24 text-white bg-black">
+    <section id="uiux" className="px-4 py-20 text-white bg-black md:px-6 md:py-24">
       <div className="mx-auto max-w-7xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-green-400">
           Design Work

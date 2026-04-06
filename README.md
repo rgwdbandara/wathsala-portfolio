@@ -1,16 +1,92 @@
-# React + Vite
+# Wathsala Portfolio 🌸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio showcasing projects, skills, and experience.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** https://wathsala-portfolio.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📱 **Responsive UI** — Works smoothly on mobile, tablet, and desktop
+- ⚡ **Fast & Lightweight** — Built with Vite for quick builds and HMR
+- 🎨 **Modern Design** — Clean sections for About, Skills, Projects & Contact
+- 🧩 **Reusable Components** — Organized React component structure
+- 🚀 **Easy Deployment** — Ready for Vercel / Netlify
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+**Frontend**
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+---
+
+## 📂 Project Structure (high level)
+
+```
+src/
+  components/
+  pages/
+  assets/
+  styles/
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/rgwdbandara/wathsala-portfolio.git
+cd wathsala-portfolio
+```
+
+### 2) Install dependencies
+
+```bash
+npm install
+```
+
+### 3) Run locally
+
+```bash
+npm run dev
+```
+
+### 4) Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 📬 Contact
+
+If you’d like to collaborate or have an opportunity, feel free to reach out.
+
+- GitHub: https://github.com/rgwdbandara
+
+---
+
+## 📄 License
+
+MIT License        
+
+
+<img width="1898" height="874" alt="image" src="https://github.com/user-attachments/assets/e1c64026-6ae8-4da0-9c79-26214de9f699" />
+
+<img width="1898" height="882" alt="image" src="https://github.com/user-attachments/assets/a20d898a-f858-4288-b804-07517aa384f4" />
+
+<img width="1887" height="881" alt="image" src="https://github.com/user-attachments/assets/32840d2e-da16-4351-8227-ba7f3fa3bef5" />
+
+
+
+

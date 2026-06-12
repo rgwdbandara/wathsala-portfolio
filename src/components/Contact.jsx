@@ -1,6 +1,36 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ejhy8km",
+        "template_v88cupk",
+        form.current,
+        "cbe9o_cPQr_UnDxbr"
+      )
+      .then(
+        () => {
+          alert("Message Sent Successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Failed to send message");
+          console.log(error);
+        }
+      );
+  };
+
   return (
-    <section id="contact" className="px-4 py-20 text-white bg-black md:px-6 md:py-24">
+    <section
+      id="contact"
+      className="px-4 py-20 text-white bg-black md:px-6 md:py-24"
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-green-400 mb-14 md:text-5xl">
           Contact Me
@@ -31,11 +61,13 @@ function Contact() {
 
             <div className="flex items-center gap-4">
               <span className="text-green-400">📍</span>
-              <p className="text-lg text-gray-200">Kandy, Sri Lanka</p>
+              <p className="text-lg text-gray-200">
+                Colombo, Sri Lanka
+              </p>
             </div>
 
             <div className="pt-4">
-              <div className="flex gap-4 text-lg">
+              <div className="flex gap-4">
                 <a
                   href="https://wa.me/94761218033"
                   target="_blank"
@@ -44,6 +76,7 @@ function Contact() {
                 >
                   WhatsApp
                 </a>
+
                 <a
                   href="https://github.com/rgwdbandara"
                   target="_blank"
@@ -52,6 +85,7 @@ function Contact() {
                 >
                   GitHub
                 </a>
+
                 <a
                   href="https://www.linkedin.com/in/wbandara"
                   target="_blank"
@@ -64,28 +98,38 @@ function Contact() {
             </div>
           </div>
 
-          {/* RIGHT SIDE FORM */}
-          <form className="space-y-5">
+          {/* RIGHT SIDE */}
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="space-y-5"
+          >
             <input
               type="text"
+              name="from_name"
               placeholder="Name"
+              required
               className="w-full px-5 py-4 text-white bg-transparent border border-green-400 rounded-lg outline-none placeholder:text-gray-500 focus:border-green-300"
             />
 
             <input
               type="email"
+              name="from_email"
               placeholder="Email"
+              required
               className="w-full px-5 py-4 text-white bg-transparent border border-green-400 rounded-lg outline-none placeholder:text-gray-500 focus:border-green-300"
             />
 
             <textarea
+              name="message"
               rows="7"
               placeholder="Message"
+              required
               className="w-full px-5 py-4 text-white bg-transparent border border-green-400 rounded-lg outline-none placeholder:text-gray-500 focus:border-green-300"
             ></textarea>
 
             <button
-              type="button"
+              type="submit"
               className="px-8 py-3 font-semibold text-black transition bg-green-500 rounded-lg hover:bg-green-400"
             >
               Send Message
